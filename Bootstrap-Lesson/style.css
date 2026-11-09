@@ -1,16 +1,12 @@
 .navbar{
     padding: 20px;
 }
-/* .form-control{
-    width: 50%;
-    margin-left: auto;
-} */
 
-/* form[role="search"] .form-control {
-    width: 250px;
-    margin-left: auto;
-} */
- .search-form .form-control{
-    width: 250px;
-        margin-left: auto;
- }
+
+.modal-title{
+    
+    text-align: center;
+    flex-grow: 1;
+}
+
+

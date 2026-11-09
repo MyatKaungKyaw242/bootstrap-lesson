@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./bootstrap.min.css">
-
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
 </head>
 
@@ -27,6 +27,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
                     </li>
+
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -35,6 +37,9 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#Find-Product">Find Product</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -64,7 +69,7 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Categories</a>`
+                        <a class="nav-link" href="#">Categories</a>
                     </li>
 
                 </ul>
@@ -77,44 +82,93 @@
 
 
 
-        <!-- Modal -->
-        <div class="modal fade" id="Login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="">
-                            <div class="mb-3">
-                                <label for="">Name</label>
-                                <input type="text" class="form-control" placeholder="Name">
-                            </div>
 
-                            <div class="mb-3">
-                                <label for="">Email</label>
-                                <input type="email" class="form-control" placeholder="Email">
-                            </div>
+    </nav>
+    <div class="modal fade" id="Find-Product" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
 
-                            <div class="mb-3">
-                                <label for="">Password</label>
-                                <input type="password" class="form-control" placeholder="Password">
-                            </div>
+            <div class="modal-content">
 
-                            <div>
-                                <input type="submit" value="Login" class="btn btn-primary">
-                            </div>
-                        </form>
-                    </div>
-                    <!-- <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div> -->
+                <div class="modal-header first-login">
+                    <h5 class="modal-title" id="exampleModalLabel">Find Product</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+
+
+                <div class="modal-body">
+                    <form action="">
+                        <div class="mb-3 text-center">
+                            <label for="">Product Name</label>
+                            <input type="text" class="form-control" placeholder="Product Name">
+                        </div>
+
+                        <div class="mb-3 text-center">
+                            <label for="">Product Code</label>
+                            <input type="number" class="form-control" placeholder="Product Code">
+                        </div>
+
+                        <div class="mb-3 text-center">
+                            <label for="">Product Description</label>
+                            <input type="text" class="form-control" placeholder="Description">
+                        </div>
+
+                        <div class="d-grid">
+                            <input type="submit" value="Find Product" class="btn btn-primary ">
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div> -->
             </div>
         </div>
-    </nav>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="Login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header first-login">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+
+                <div class="modal-body">
+                    <form action="">
+                        <div class="mb-3 text-center">
+                            <label for="">Name</label>
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+
+                        <div class="mb-3 text-center">
+                            <label for="">Email</label>
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+
+                        <div class="mb-3 text-center">
+                            <label for="">Password</label>
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+
+                        <div class="d-grid">
+                            <input type="submit" value="Login" class="btn btn-primary ">
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div> -->
+            </div>
+        </div>
+    </div>
+
+
+
+
     <script src="./bootstrap.bundle.min.js"></script>
 </body>
 
